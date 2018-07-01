@@ -1,16 +1,21 @@
 package jrdb.get.data.base
 
-import jrdb.get.data.common.JrdbConst
+import jrdb.get.data.common.JrdbConstant
 
-class groovy {
 
+class BaseScraping {
     def config = new ConfigSlurper().parse(new File("src/main/resources/config.groovy").toURI().toURL())
-    def url_prefix = "http://"
-    def baseUrl = config.jrdb_base_url
-    def cont = new JrdbConst()
+    // Basic認証ID
+    def basic_id = config.jrdb_id
+    // Basic認証PW
+    def basic_pass = config.jrdb_pw
+    // IDとパスワードを送信用に結合
+    def basic_id_pass = "${basic_id}${JrdbConstant.CORON_MARK}${basic_pass}"
+    // IDとパスワードをベーシック認証用にbase64でエンコード
+    def basic_id_pass64 = basic_id_pass.bytes.encodeBase64().toString()
+    // ヘッダへ設定する情報を用意
+    def headKey = "Authorization"
+    def headValue = "Basic " + basic_id_pass64
 
-    'BaseScraping.groovy'() {
-        println baseUrl
-    }
 }
 
