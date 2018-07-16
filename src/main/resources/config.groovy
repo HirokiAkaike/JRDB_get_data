@@ -10,6 +10,8 @@ data_base_dir {
     holding_race = 'src/main/resources/data/holding_races/'
     tv_program = 'src/main/resources/data/tv_programs/'
     race_horse = 'src/main/resources/data/race_horses/'
-    basic_horse = 'src/main/resources/data/basic_horses/'
+    jrdb_information = 'src/main/resources/data/jrdb_informations/'
+    standard_odd  = 'src/main/resources/data/standard_odds/'
+
 }
 
