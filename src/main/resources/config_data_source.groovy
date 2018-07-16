@@ -1,0 +1,5 @@
+server_name = "localhost"
+db_name = "jrdb"
+db_port = "5432"
+user_id = "jrdb"
+user_pw = "jrdb"
