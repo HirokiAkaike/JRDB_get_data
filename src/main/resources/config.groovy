@@ -12,6 +12,9 @@ data_base_dir {
     race_horse = 'src/main/resources/data/race_horses/'
     jrdb_information = 'src/main/resources/data/jrdb_informations/'
     standard_odd  = 'src/main/resources/data/standard_odds/'
+    standard_quinella_place_odd  = 'src/main/resources/data/standard_quinella_place_odds/'
+
+
 
 }
 
