@@ -15,6 +15,10 @@ data_base_dir {
     standard_quinella_place_odd  = 'src/main/resources/data/standard_quinella_place_odds/'
     standard_excta_odd  = 'src/main/resources/data/standard_excta_odds/'
     standard_trio_odd  = 'src/main/resources/data/standard_trio_odds/'
+    paci  = 'src/main/resources/data/pacis/'
+    score_data  = 'src/main/resources/data/score_datas/'
+    score_extension_data  = 'src/main/resources/data/score_extension_datas/'
+    trainer_data  = 'src/main/resources/data/trainer_datas/'
 
 
 
