@@ -13,6 +13,7 @@ data_base_dir {
     jrdb_information = 'src/main/resources/data/jrdb_informations/'
     standard_odd  = 'src/main/resources/data/standard_odds/'
     standard_quinella_place_odd  = 'src/main/resources/data/standard_quinella_place_odds/'
+    standard_excta_odd  = 'src/main/resources/data/standard_excta_odds/'
 
 
 
