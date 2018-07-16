@@ -19,8 +19,7 @@ data_base_dir {
     score_data  = 'src/main/resources/data/score_datas/'
     score_extension_data  = 'src/main/resources/data/score_extension_datas/'
     trainer_data  = 'src/main/resources/data/trainer_datas/'
-
-
-
+    jockey_data  = 'src/main/resources/data/jockey_datas/'
+    deleted_horse_data  = 'src/main/resources/data/deleted_horse_datas/'
 }
 
