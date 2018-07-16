@@ -3,7 +3,7 @@ package jrdb.get.data.script
 import jrdb.get.data.base.BaseScraping
 import org.jsoup.Jsoup
 
-class TvProgramsScraping extends BaseScraping {
+class TvProgramScraping extends BaseScraping {
     // 番組データURL
     def tv_program_list_page_url = "http://www.jrdb.com/member/datazip/Bac/index.html"
     def data_dir = config.data_base_dir.tv_program
