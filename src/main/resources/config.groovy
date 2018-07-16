@@ -9,6 +9,6 @@ holding_race_url = "http://www.jrdb.com/member/datazip/Kab/index.html"
 data_base_dir {
     holding_race = 'src/main/resources/data/holding_races/'
     tv_program = 'src/main/resources/data/tv_programs/'
-
+    race_horse = 'src/main/resources/data/race_horses/'
 }
 
