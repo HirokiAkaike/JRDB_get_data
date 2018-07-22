@@ -12,19 +12,19 @@ class DeletedHorseDataScraping extends BaseScraping {
     def table_name = "jrdb_data_patch.deleted_horse_data_file"
 
     def run() {
-        def deleted_horse_data_page = 騎手データページへ遷移する()
-        騎手データ取得(deleted_horse_data_page)
+        def deleted_horse_data_page = 抹消馬データページへ遷移する()
+        抹消馬データ取得(deleted_horse_data_page)
         return true
     }
 
-    private def 騎手データページへ遷移する() {
+    private def 抹消馬データページへ遷移する() {
         def conn = Jsoup.connect(deleted_horse_data_list_page_url).header(headKey, headValue)
         def page = conn.get()
         return page
 
     }
 
-    private def 騎手データ取得(conn){
+    private def 抹消馬データ取得(conn){
         def deleted_horse_data_zip_list = conn.select('a')
         def dataSourceFileDao = new DataSourceFileDao()
         deleted_horse_data_zip_list.each {
