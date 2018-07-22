@@ -28,7 +28,7 @@ class BasicHorseScraping extends BaseScraping {
         def basic_horse_zip_list = conn.select('table li a')
         def dataSourceFileDao = new DataSourceFileDao()
         basic_horse_zip_list.each {
-            if(dataSourceFileDao.selectForDataSourceFileByFileName(table_name, it.text) == null){
+            if(dataSourceFileDao.selectForDataSourceFileByFileName(table_name, it.text()) == null){
                 def response = Jsoup.connect(it.attr("abs:href")).header(headKey, headValue)
                         .ignoreContentType(true).execute()
                 def out = new OutputStreamWriter(new FileOutputStream(new java.io.File(data_dir + it.text())))

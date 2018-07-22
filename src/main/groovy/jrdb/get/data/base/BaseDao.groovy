@@ -13,4 +13,5 @@ class BaseDao {
     def password = config.user_pw
     def driver = 'org.postgresql.Driver'
     def sql = Sql.newInstance(url, user, password, driver)
+
 }
