@@ -6,7 +6,7 @@ import jrdb.get.data.dto.DataSourceFileDto
 import org.jsoup.Jsoup
 
 class PaciScraping extends BaseScraping {
-    // JRDB前走データURL
+    // PACIデータURL
     def paci_list_page_url = "http://www.jrdb.com/member/datazip/Paci/index.html"
     def data_dir = config.data_base_dir.paci
     def table_name = "jrdb_data_patch.paci_file"

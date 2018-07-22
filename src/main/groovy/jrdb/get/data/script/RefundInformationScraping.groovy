@@ -7,7 +7,7 @@ import org.jsoup.Jsoup
 
 class RefundInformationScraping extends BaseScraping {
     // 払戻データURL
-    def paci_list_page_url = "http://www.jrdb.com/member/datazip/Hjc/index.html"
+    def refund_information_list_page_url = "http://www.jrdb.com/member/datazip/Hjc/index.html"
     def data_dir = config.data_base_dir.refund_information
     def table_name = "jrdb_data_patch.refund_information_file"
 
@@ -18,7 +18,7 @@ class RefundInformationScraping extends BaseScraping {
     }
 
     private def 払戻データページへ遷移する() {
-        def conn = Jsoup.connect(paci_list_page_url).header(headKey, headValue)
+        def conn = Jsoup.connect(refund_information_list_page_url).header(headKey, headValue)
         def page = conn.get()
         return page
 
