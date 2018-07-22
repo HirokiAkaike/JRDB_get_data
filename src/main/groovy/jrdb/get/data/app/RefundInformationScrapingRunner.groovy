@@ -1,6 +1,5 @@
 package jrdb.get.data.app
 
-import jrdb.get.data.script.LastMinuteInformationScraping
 import jrdb.get.data.script.RefundInformationScraping
 
 
