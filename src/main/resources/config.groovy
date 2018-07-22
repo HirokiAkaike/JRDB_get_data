@@ -22,5 +22,8 @@ data_base_dir {
     trainer_data  = 'src/main/resources/data/trainer_datas/'
     jockey_data  = 'src/main/resources/data/jockey_datas/'
     deleted_horse_data  = 'src/main/resources/data/deleted_horse_datas/'
+    last_minute_information = 'src/main/resources/data/last_minute_informations/'
+    refund_information = 'src/main/resources/data/refund_informations/'
+    early_bulletin = 'src/main/resources/data/early_bulletins/'
 }
 
