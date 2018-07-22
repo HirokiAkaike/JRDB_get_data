@@ -9,8 +9,15 @@ class DataSourceFileDao extends BaseDao {
 
     def selectForDataSourceFileByFileName(def table_name, def file_name) throws SQLException {
         String query =  "SELECT file_name FROM ${table_name.toString()} WHERE file_name = '${file_name}'"
-        sql.withTransaction {}
-        return new DataSourceFileDto().setFile_name(sql.rows(query)[0])
+
+        def dto = new DataSourceFileDto()
+        dto.file_name = sql.rows(query)[0]
+        if(dto.file_name == null){
+            return null
+        } else {
+            return dto
+        }
+
     }
 
     void insertDataSourceFile(def table_name,  DataSourceFileDto dto) {
